@@ -16,27 +16,30 @@
             <div class="col-md-6">
               <div class="form-group">
                 <label for="first">First Name</label>
-                <input type="text" class="form-control" placeholder="First Name" id="first">
+                <input type="text" class="form-control" placeholder="First Name" id="first" onkeydown="fnvalidation()">
+                <span id="fname"></span>
               </div>
             </div>      
             <div class="col-md-6">
               <div class="form-group">
                 <label for="last">Last Name</label>
-                <input type="text" class="form-control" placeholder="Last Name" id="last">
+                <input type="text" class="form-control" placeholder="Last Name" id="last" onkeydown="lnvalidation()">
+                <span id="lname"></span>
               </div>
             </div>
           </div>      
             <div class="col-md-6">
               <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" class="form-control" id="phone" placeholder="phone">
+                <input type="tel" class="form-control" id="phone" placeholder="phone" onkeydown="pnvalidation()">
+                <span id="pno"></span>
               </div>
             </div>
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
                 <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="email" onkeydown="validation()">
+                <input type="email" class="form-control" id="email" placeholder="email" onkeydown="evalidation()">
                 <span id="text"></span>
               </div>
             </div>
